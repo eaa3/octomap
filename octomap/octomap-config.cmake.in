@@ -25,10 +25,20 @@
  
 set(OCTOMAP_INCLUDE_DIRS "@OCTOMAP_INCLUDE_DIRS@")
 set(OCTOMAP_LIBRARY_DIRS "@OCTOMAP_LIB_DIR@")
+
+
  
 
 # Set library names as absolute paths:
+
+
 set(OCTOMAP_LIBRARIES
-  "@OCTOMAP_LIB_DIR@/liboctomap@CMAKE_SHARED_LIBRARY_SUFFIX@"
-  "@OCTOMAP_LIB_DIR@/liboctomath@CMAKE_SHARED_LIBRARY_SUFFIX@"
+   #"C:/Users/Ermano A Arruda/Projects/octomap/bin/Release/octomap.dll"
+   "C:/Users/Ermano A Arruda/Projects/octomap/lib/Release/octomap.lib"
+   #"C:/Users/Ermano A Arruda/Projects/octomap/bin/Release/octomath.dll"
+   "C:/Users/Ermano A Arruda/Projects/octomap/lib/Release/octomath.lib"
+#  "@OCTOMAP_RUNTIME_DIR@octomap@CMAKE_SHARED_LIBRARY_SUFFIX@"
+#  "@OCTOMAP_LIB_DIR@octomap@CMAKE_SHARED_LIBRARY_SUFFIX@"
+#  "@OCTOMAP_RUNTIME_DIR@octomath@CMAKE_SHARED_LIBRARY_SUFFIX@"
+#  "@OCTOMAP_LIB_DIR@octomath@CMAKE_SHARED_LIBRARY_SUFFIX@"
 )

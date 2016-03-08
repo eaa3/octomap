@@ -77,6 +77,9 @@ export(PACKAGE octomap)
 # Create a octomap-config.cmake file for the use from the build tree
 set(OCTOMAP_INCLUDE_DIRS "${INCLUDE_DIRS}")
 set(OCTOMAP_LIB_DIR "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
+set(OCTOMAP_BIN_DIR "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+message("Output directory " ${OCTOMAP_BIN_DIR})
+
 # not used right now (export depends?)
 #set(OCTOMAP_CMAKE_DIR "${PROJECT_BINARY_DIR}")
 configure_file(octomap-config.cmake.in
