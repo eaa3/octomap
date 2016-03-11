@@ -27,6 +27,7 @@ set(OCTOMAP_INCLUDE_DIRS "@OCTOMAP_INCLUDE_DIRS@")
 set(OCTOMAP_LIBRARY_DIRS "@OCTOMAP_LIB_DIR@")
  
 
+<<<<<<< HEAD
 # Set library names as absolute paths:
 IF (WIN32)
 	
@@ -51,3 +52,10 @@ ELSEIF (UNIX)
 
 ENDIF()
 
+=======
+# Set library names
+set(OCTOMAP_LIBRARIES 
+  "@OCTOMAP_LIBRARY@"
+  "@OCTOMATH_LIBRARY@"
+)
+>>>>>>> 03da11e17a1261d6914840e6b85cf9f6d307458e
