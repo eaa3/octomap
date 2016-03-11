@@ -1,3 +1,4 @@
+
 SET (octomap_SRCS
   AbstractOcTree.cpp
   AbstractOccupancyOcTree.cpp
@@ -17,6 +18,9 @@ set_target_properties( octomap PROPERTIES
   VERSION ${OCTOMAP_VERSION}
   SOVERSION ${OCTOMAP_SOVERSION}
 )
+#SET_PROPERTY(TARGET octomap PROPERTY RELEASE_POSTFIX ${CMAKE_RELEASE_POSTFIX})
+#SET_PROPERTY(TARGET octomap PROPERTY DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
+
 ADD_LIBRARY( octomap-static STATIC ${octomap_SRCS})
 SET_TARGET_PROPERTIES(octomap-static PROPERTIES OUTPUT_NAME "octomap") 
 
